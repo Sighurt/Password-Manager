@@ -19,7 +19,7 @@ def option1Func():
             userData2 = {"Name": option1, "Password": option1Two}
             userData3 = {"Name": option1, "Password": option1Two}
             userData4 = {"Name": option1, "Password": option1Two}
-            userData5 = {"app/email": option1, "password": option1Two}
+            userData5 = {"Name": option1, "Password": option1Two}
 
             if not os.path.exists("fil.json"):
                 print("The password has been added to the database! ")
