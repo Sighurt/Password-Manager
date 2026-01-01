@@ -51,7 +51,7 @@ if not os.path.exists("password.json"):
 
     if setPassword == setPassword2:
         with open("password.json", "w") as file:
-            json.dump(userData, file)
+            json.dump(setPassword, file)
 
 elif os.path.exists("password.json"):
 
@@ -89,10 +89,10 @@ elif os.path.exists("password.json"):
                     with open("fil5.json", "r") as file:
                         data = json.load(file)
                         print(data)
-                else:
-                    stupid = input("You don't have any passwords stored yet! Answer with a 1 if you want to store                   one. ")
+                elif not os.path.exists("fil.json") and not os.path.exists("fil2.json") and not os.path.exists("fil3.json") and not os.path.exists("fil4.json") and not os.oath.exists("fil5.json"):
+                    reset = input("You don't have any passwords stored yet! Answer with a 1 if you want to store one. ")
 
-                    if stupid == "1":
+                    if reset == "1":
                         option1Func()
  
         else:
